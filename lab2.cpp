@@ -171,15 +171,16 @@ void task6_7(cv::Mat plane)
     cv::imshow("unsharped3", unsharped3);
 }
 
+
 int main( int argc, char** argv ) 
 {
     cv::Mat plane;
     plane = imread("../images/photo_2022-02-02_16-05-54.jpg" ,cv::IMREAD_GRAYSCALE);
     cv::resize(plane, plane, cv::Size(500, 500));
-    task1_3(plane);
+    // task1_3(plane);
     // task4(plane);
     // task5(plane);
-    // task6_7(plane);
+    //task6_7(plane);
     cv::waitKey(0);
     cv::destroyAllWindows();
     return 0;
